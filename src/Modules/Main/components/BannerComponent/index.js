@@ -1,0 +1,1 @@
+export { BannerComponent } from './BannerComponent'

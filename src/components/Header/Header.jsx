@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { NavComponent } from "./components/NavComponent"
 
 export const Header=()=>{
     return(
@@ -9,10 +10,7 @@ export const Header=()=>{
                         <Link to='/' ><img src='https://imageup.ru/img7/4060857/logo_main.png' alt='Главная страница' className="log_img"/></Link>
                     </div>
                     <nav className="header_nav">
-                        <Link to='/' className='nav_link'>Main</Link>
-                        <Link to='/characters' className='nav_link'>Персонажи</Link>
-                        <Link to='/monsters' className='nav_link'>Бестиарий</Link>
-                        <Link to='/monsters' className='nav_link'>Магазин карт</Link>
+                      <NavComponent />
                     </nav>
                     <Link to='/cart' className='cart_link'></Link>
                 </div>

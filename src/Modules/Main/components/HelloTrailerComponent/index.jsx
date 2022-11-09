@@ -1,0 +1,1 @@
+export { HelloTrailerComponent } from './HelloTrailerComponent'

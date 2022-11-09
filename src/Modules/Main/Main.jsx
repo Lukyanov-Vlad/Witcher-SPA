@@ -4,26 +4,26 @@ import testStore from "./testStore";
 import { observer } from "mobx-react-lite";
 import { Image } from 'antd'
 import { CarouselComponent } from './components/CarouselComponent'
+import { BannerComponent } from "./components/BannerComponent";
+import { HelloTrailerComponent } from "./components/HelloTrailerComponent";
+import { AbilityComponent } from "./components/AbilityComponent";
+import { LocationComponent } from "./components/LocationComponent/LocationComponent";
+
 
 export const Main =observer(()=>{
-    const {spisok,loadData}=testStore;
 
-    useEffect(()=>{
-        loadData();
-    },[])
     return(
-        <div className="container">
-             <h1>Main</h1>
-             <Image src="../../../img/Vector.png"/>
-             <CarouselComponent />
-            {/* {spisok && spisok.map(({id,title,image})=>
-            <>
-                <div>{title}</div>
-                <img key={id} src={image}/>
-            </>
-            
-               
-            )} */}
-        </div>
+        <main className="main">
+             <BannerComponent />
+             <div className="container">
+               <HelloTrailerComponent />
+               {/* <AbilityComponent /> */}
+               <LocationComponent />
+               {/* <CarouselComponent /> */}
+
+             </div>    
+             
+             
+        </main>
    )
 })
