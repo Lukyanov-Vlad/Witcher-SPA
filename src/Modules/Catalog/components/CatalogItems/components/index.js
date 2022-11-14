@@ -1,0 +1,1 @@
+import { CatalogItem } from './CatalogItem'

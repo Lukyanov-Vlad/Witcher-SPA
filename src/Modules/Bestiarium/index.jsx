@@ -1,0 +1,1 @@
+export {Bestiarium} from './Bestiarium'

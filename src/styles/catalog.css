@@ -1,0 +1,61 @@
+*{
+    font-family: 'Inter';
+}
+
+.category_item{
+    width: 195px;
+    height: 275px;
+    background-position: center;
+    background-size: 195px 275px;
+}
+
+.category_item:hover{
+    cursor: pointer;
+}
+
+.catalog_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.catalog_item{
+    width: calc(25% - 30px);
+    margin: 15px;
+}
+.catalog_item_img{
+   text-align: center;
+}
+.catalog_item_img img{
+    background-color: red;
+    width: 250px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: 3px solid #dfcc9a;
+}
+
+.catalog_item_img img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 75px  #f7262d;
+    animation-duration: .5s;
+    animation-name: shine;
+}
+.catalog_item_options{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.catalog_item_options_price{
+    color: #DB3138;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+@keyframes shine {
+    from{
+        box-shadow: 0 0 0 transparent;
+    }
+    to{
+        box-shadow: 0 0 75px  #f7262d;
+    }
+}

@@ -4,13 +4,15 @@ import { NavComponent } from "../Header/components/NavComponent"
 import { ModalForm } from "../ModalForm"
 import { Form, Input, Modal } from "antd"
 import connectionStore from "../../stores/ConnectionStore/ConnectionStore"
+
+import {useForm} from 'react-hook-form'
 import { useRef } from "react"
 
 export const Footer =()=>{
-    const email_input=useRef();
+    const formRef=useRef()
     const{ addEmails }=connectionStore;
     const [visible,setVisible]=useState(false);
-    const [email,setEmail]=useState(undefined);
+    const [email,setEmail]=useState('');
     const changeVisible=()=>{
        
         if(!visible===false){
@@ -33,17 +35,22 @@ export const Footer =()=>{
               content: 'Данные оттправлены успешно!',
             });
           };
+          
+          const {reset}=useForm();
     return (
         <footer className="footer">
           
                 <div className="footer_top">
                     <div className="container">
                         <h3 className="h3_title"> Будьте в курсе  всех обновлений на сайте </h3>
-                        <Form 
+                        <Form  ref={formRef} 
                             onFinish={({email})=>{
+                               
                                 addEmails(email);
                                 success();
-                                email_input.current.target.value=''
+                                reset();
+                                formRef.current.resetFields();
+                               
                             }
 
                             }
@@ -76,7 +83,10 @@ export const Footer =()=>{
                             }
                                 hasFeedback
                             >
-                                <Input ref={email_input} placeholder="Введите свой email..." onChange={(event) => setEmail(event.target.value)}  className="input_email"/>
+                                <Input value={email} placeholder="Введите свой email..." onChange={(event) => setEmail(event.target.value)}  className="input_email"
+                                 
+                                   
+                                />
                              </Form.Item>
                              <Form.Item  name="send_email">
                                     <button htmltype="submit"  className="button_email" >Присоединиться</button>
@@ -95,7 +105,7 @@ export const Footer =()=>{
                         </div>
                         <div className="footer_bottom_contacts">
                             <h3 className="h3_title">Контакты</h3>
-                            <a href='https://goo.gl/maps/vA4PW3aGqaxtGuGE9' target='_blank' className='footer_link'>Варшава, ул. Jagiellońska 74, 03-301</a>
+                            <a href='https://goo.gl/maps/yQAiPT6bCqVV7wVU9' target='_blank' className='footer_link'>Варшава, ул. Jagiellońska 74, 03-301</a>
                             <a href='tel:+1234567890' className='footer_link'><span className='footer_text'>+123 456 7890</span></a>
                             <button  className='footer_link' onClick={changeVisible}>Обратная связь</button>
                         </div>

@@ -6,9 +6,7 @@ import { useRef } from 'react';
 
 export const CarouselComponent=()=>{
         const ref=useRef();
-        const onChange = (currentSlide) => {
-          console.log(currentSlide);
-        };
+        
        
         return (
           <>
@@ -21,7 +19,7 @@ export const CarouselComponent=()=>{
                            
     
                             <Carousel className="carousel"
-                                afterChange={onChange} 
+                                
                                 draggable
                                 dots={false}
                                 ref={ref}>

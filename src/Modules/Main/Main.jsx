@@ -1,6 +1,6 @@
 
 import { useEffect } from "react";
-import testStore from "./testStore";
+
 import { observer } from "mobx-react-lite";
 import { Image } from 'antd'
 import { CarouselComponent } from './components/CarouselComponent'
@@ -17,9 +17,9 @@ export const Main =observer(()=>{
              <BannerComponent />
              <div className="container">
                <HelloTrailerComponent />
-               {/* <AbilityComponent /> */}
+               <AbilityComponent />
                <LocationComponent />
-               {/* <CarouselComponent /> */}
+               <CarouselComponent />
 
              </div>    
              

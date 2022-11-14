@@ -1,5 +1,7 @@
 import { Link, Navigate, useNavigate } from "react-router-dom";
 
+
+
 export const BannerComponent =()=>{
 
     const navigate=useNavigate();

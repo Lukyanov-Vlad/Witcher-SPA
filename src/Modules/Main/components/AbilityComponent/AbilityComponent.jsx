@@ -7,7 +7,7 @@ import Loader from "../../../../components/Loader/Loader";
 
 export const AbilityComponent=observer(()=>{
     const {abilityList,loadAbility,loadingAbility} =abilityStore;
-    console.log(loadingAbility)
+   
     useEffect(()=>{
         loadAbility();
     },[])

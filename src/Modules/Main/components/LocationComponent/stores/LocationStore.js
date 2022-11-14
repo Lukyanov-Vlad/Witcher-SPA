@@ -19,7 +19,7 @@ class LocationStore{
             const data=await response.json();
             runInAction(()=>{
                 this.locationList=[...data];
-                console.log(this.locationList)
+              
                 this.loadingLocation=false;
             })
             

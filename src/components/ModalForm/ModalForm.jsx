@@ -67,7 +67,7 @@ export const ModalForm=observer(({closeForm})=>{
                         ()=>{
                             error();
                         }
-                    }>
+                    } >
                         <Form.Item label="Фамилия:"  >
                              <Form.Item name="surname"  
                                 rules={
@@ -86,6 +86,7 @@ export const ModalForm=observer(({closeForm})=>{
                                         ]
                                     }
                                 hasFeedback
+                                
                             >
                                 <Input placeholder="Введите фамилию..." onChange={(event) => setSurname(event.target.value)} className='form_input'/>
                              </Form.Item>

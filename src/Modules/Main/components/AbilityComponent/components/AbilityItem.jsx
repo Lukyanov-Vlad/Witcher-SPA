@@ -2,7 +2,7 @@ import { Image } from 'antd'
 
 export const AbilityItem=({item})=>{
     const{ability_text,ability_img,alt,ability_img_s}=item;
-    console.log(ability_img);
+  
     return(
         <div className="ability_item">
             <div className="ability_item_img">

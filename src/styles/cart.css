@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+
+.cart_wrapper {
+    padding-top: 30px;
+}
+.cart_index,
+.cart_item_title,
+.cart_item_count,
+.cart_item_price,
+.del_btn,
+.cart_full_price,
+.cart_pay_btn{
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+    
+}
+
+.cart_item {
+   
+    display: flex;
+    align-items: center;
+    border: 3px solid rgb(94, 118, 117);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+.cart_index {
+    font-weight: 400;
+    margin: 0 20px;
+  
+}
+.cart_product{
+    width: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+.cart_item_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.cart_item_image{
+    height: 70px;
+    width: 150px;
+}
+.cart_item_image img{
+    height: 100%;
+    margin:0 auto;
+    display: block;
+}
+.cart_item_title {
+    font-weight: BOLD;
+    width: 60%;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.cart_item_pay_info {
+    display: flex;
+  
+    width: 30%;
+    justify-content: space-around;
+}
+
+
+.cart_item_btn{
+    width: 10%;
+    
+    
+}
+.del_btn::before{
+    content: '\f00d';
+    font-family: 'FontAwesome';
+}
+.del_btn {
+    display: block;
+    margin:0 auto;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    color: rgb(176, 172, 172);
+}
+.del_btn:hover{
+    color: red;
+   cursor: pointer;
+}
+.cart_footer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.cart_pay_btn{
+    font-weight: bold;
+}
+
+.cart_full_price{
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    text-align: right;
+    color: rgb(227, 56, 56);
+    padding-right: 20px;
+  
+}
+/*------------------------CART MODAL------------------------------------*/
+.ant-modal-content{
+    border: 3px solid #DB3138;
+    border-radius: 20px;
+    background-color: rgb(56, 51, 51);
+}
+.ant-modal-header{
+    background-color: rgb(56, 51, 51);
+    border-radius: 20px 20px 0 0;
+}
+.order_details{
+    border: 1px solid #DB3138;
+    margin: 0 20px;
+    height: 200px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    padding: 10px;
+}
+.total_modal_price{
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.total_modal_price_text{
+    color: #DB3138;
+}
+.ant-modal-footer{
+    border-top: 1px solid #DB3138;
+display: flex;
+justify-content: center;
+}
+.ant-btn-default{
+    display: none;
+}
+.ant-btn-primary{
+    width: 100px;
+}
+
+/*------------------------CART MODAL END--------------------------------*/

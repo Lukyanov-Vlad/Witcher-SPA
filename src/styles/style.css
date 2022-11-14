@@ -4,6 +4,10 @@
   
 }
 
+.padding_top{
+    padding-top:105px;
+}
+
 h1,h2,h3,h4{
     margin-bottom: 0;
 }
@@ -18,7 +22,7 @@ body,
 .loader_wrapper{
     display: flex;
     justify-content: center;
-    padding: 50px 0;
+    padding:100px 0;
     background-color: #fff;
 }
 .loader {
@@ -77,6 +81,7 @@ body,
 
 
 .send_modal_btn,
+.dropdown-content .nav_link,
 .header .nav_link{
     font-family: 'Inter';
     font-style: normal;
@@ -85,7 +90,7 @@ body,
     line-height: 29px;
     /* identical to box height */
 
-
+    display: inline-block;
     color: #FFFFFF;
     margin-right: 10px;
     padding: 10px 45px;
@@ -95,7 +100,61 @@ body,
     margin-right: 0;
 }
 
+
+
+.pers_link:hover::after{
+    content: '';
+    width: 63px;
+    height: 63px;
+    border-top:3px solid #f61828;
+    border-bottom:none !important;
+    border-right:3px solid #f61828;
+    position: absolute;
+    top:-8px;
+    right: -8px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+   
+    background-color: rgba(0,0,0,1);
+  
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdown-content .nav_link {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    margin-right: 0;
+    padding:10px 35px;
+    width:222.58px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+.dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-content .nav_link::before,
+.dropdown:hover .dropdown-content .nav_link:after {
+    display: block;
+    border: none;
+}
+  
+.dropdown:hover .pers_link
+{
+    background-color: #f61828;
+   
+}
+
+
 .send_modal_btn,
+.pers_link:hover,
 .nav_link:hover{
     background-color: #f61828;
     position: relative;
@@ -126,10 +185,27 @@ body,
 }
 
 .cart_link{
+    display: block;
+    margin-right: 15px;
     width: 32px;
     height: 32px;
     background-image: url(https://imageup.ru/img215/4060843/cart.png);
     background-size: 32px 32px;
+    position: relative;
+}
+.count_in_cart{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+  
+    font-size: 9px;
+    background-color: #DB3138;
+    border-radius: 50%;
 }
 
 .cart_link:hover{
@@ -300,7 +376,7 @@ body,
     color: #FFFFFF;
 }
 
-.hello_text_title{
+.h1_text_title{
     font-family: 'Playfair Display', serif;
     padding-top: 35px;
     text-transform: uppercase;
@@ -523,6 +599,8 @@ body,
     padding-top:20px;
    
 }
+
+
 .ant-form-horizontal .ant-form-item-label{
     margin: 10px 0;
 }
@@ -537,19 +615,21 @@ body,
   
 }
 .ant-input-affix-wrapper{
+   
     border: 3px solid #DB3138;
     background-color: transparent;
     font-size: 18px;
     font-style: italic;
-    font-style: italic;
+    color: #fff;
 }
 .ant-input{
-    color: #FFFFFF;
     
+    color: #FFFFFF;
+    font-style: italic;
     background-color: transparent;
     height: 39px;
     width: 505px;
-    
+    border-radius: 0;
 }
 .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper{
     background-color: transparent;
@@ -626,8 +706,33 @@ body,
 .ant-form-horizontal .ant-form-item-label{
     text-align: left;
 }
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+   
+    -webkit-text-fill-color: #fff; 
+    -webkit-box-shadow: 0 0 0px 1000px rgb(56, 51, 51) inset !important;
+    border-radius: none;
+}
+
+/* .ant-form-item-control-input-content{
+    color: white;
+} */
+.ant-input-affix-wrapper>.ant-input:focus {
+    -webkit-text-fill-color: #fff; 
+    -webkit-box-shadow: 0 0 0px 1000px rgb(56, 51, 51) inset !important;
+}
+/*---------------------Success modal*/
+.ant-modal-confirm-body .ant-modal-confirm-content{
+
+}
 /*----------------------Modal Form End----------------------*/
 /*----------------------Error Modal-------------------------*/
+
 .ant-modal-confirm .ant-modal-body{
     border: 3px solid #DB3138;
     border-radius: 20px;
@@ -637,11 +742,13 @@ body,
 .ant-modal-content{
     border-radius: 20px;
 }
+
 .ant-modal-confirm-body .ant-modal-confirm-title {
     font-size: 24px;
     color: white;
     font-weight: bold;
 }
+.ant-modal-confirm-body .ant-modal-confirm-content,
 .ant-modal-confirm-body>.anticon+.ant-modal-confirm-title+.ant-modal-confirm-content {
     margin-left: 38px;
     margin-top: 20px;
@@ -764,9 +871,12 @@ body,
 .footer_bottom_menu .nav_link:after{
     display: none;
 }
+.footer_bottom .dropdown:hover .dropdown-content,
+.footer_bottom .dropdown-content{
+    display: none;
+}
 .footer_bottom_logo{
  
-    
     height: 100%;
 }
 .footer_logo_img{
@@ -820,4 +930,32 @@ body,
 .send_modal_btn:hover{
     cursor: pointer;
 }
+.form_email input:-webkit-autofill,
+.form_email  input:-webkit-autofill:hover,
+.form_email input:-webkit-autofill:focus,
+.form_email input:-webkit-autofill:active {
+    -webkit-text-fill-color: #DB3138; 
+   
+    -webkit-box-shadow: 0 0 0px 1000px rgb(0, 0, 0) inset !important;
+    border-radius: none;
+}
+
+.form_email .ant-input-affix-wrapper>.ant-input:focus {
+    -webkit-text-fill-color: #DB3138; 
+    -webkit-box-shadow: 0 0 0px 1000px rgb(0, 0, 0) inset !important;
+}
+
 /*------------------Footer end-----------------------*/
+.spark {
+    background-color: #DE4A00;
+    font-family: 'Helvetica', sans-serif;
+    visibility: hidden;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 30%;
+    box-shadow: 0 0 5px #AB000B;
+    }
+
+/*------------------CATALOG----------------------*/
+/*------------------CATALOG END------------------*/

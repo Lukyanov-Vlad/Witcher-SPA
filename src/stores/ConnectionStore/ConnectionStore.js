@@ -12,7 +12,7 @@ class ConnectionStore{
     }
 
     addMessage(obj){
-       console.log(obj)
+      
         this.messagies.push(obj);
         localStorage.setItem('messages',JSON.stringify(this.messagies));
         
