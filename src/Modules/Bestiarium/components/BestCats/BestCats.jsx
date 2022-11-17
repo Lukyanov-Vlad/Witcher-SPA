@@ -1,4 +1,4 @@
-import Loader from "../../../../components/Loader/Loader";
+import { Loader } from "../../../../components/Loader";
 import bestiariumStore from "../../stores/BestiariumStore";
 import { MonsterCategoryItem } from "./MonsterCategoryItem/MonsterCategoryItem";
 import { observer } from "mobx-react-lite";
@@ -16,15 +16,17 @@ export const BestCats=observer(({bestCat})=>{
        
     },[]);
   
-    return( <div className='dropdoun_monsters'>
+    return( <div className='monster_category_wrapper'>
              
              <label className="monster_cats_btn" htmlFor={id}>{name_moster_cats}</label>
-             <input type="checkbox" id={id} className="hide"/>
-             {/* <div className="monster_cats_btn">{name_moster_cats}</div>
-             <div className="monster_cats_content"> */}
-                <div id="monster_category_item">
-                        {loadingMonstersByCategory && <Loader />} 
-                        {!loadingMonstersByCategory &&  monsterList && filterMonster.map((item)=><MonsterCategoryItem key={id} monster={item}/>)}
+             <input type="checkbox" id={id} className="monster_chekbox"/>
+            
+                <div id="monster_category_items">
+                        <div className="monster_category_items_wrapper">
+                                {loadingMonstersByCategory && <Loader />} 
+                                {!loadingMonstersByCategory &&  monsterList && filterMonster.map((item)=><MonsterCategoryItem key={item.id} monster={item}/>)}
+                        </div>
+                        
                         
                 </div>
                 

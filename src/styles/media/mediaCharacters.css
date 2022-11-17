@@ -1,0 +1,188 @@
+@media (max-width: 1280px){
+
+.char_wrapper{
+  
+    padding: 0 25px;
+}
+.person_link{
+   
+   
+    margin: 25px 25px;
+    width: 300px;
+    
+   
+}
+
+
+  
+}
+
+@media (max-width: 1152px){
+
+    .person_wrapper{
+        flex-direction: column;
+    }
+    .person_img{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .person_info{
+        margin: 0 25px;
+    }
+    .char_wrapper{
+        
+        padding: 0 31.25px;
+    }
+    .person_link{
+      
+        
+        margin: 25px 31.25px;
+        width: 250px;
+        
+      
+    }
+    .front:before,
+    .front img,
+    .card{
+      width: 250px !important;
+      height: 100% !important;
+    }
+
+}
+
+@media (max-width: 1024px){
+
+    .return_to_char_btn{
+        color: #DB3138 !important;
+    }
+    .return_to_char_btn:hover{
+        background-color: transparent !important;
+
+    }
+    .return_to_char_btn:hover::after,
+    .return_to_char_btn:hover::before{
+        display: none;
+    }
+    .char_wrapper{
+          
+        padding: 0 21.25px;
+    }
+    .person_link{
+      
+        
+        margin: 25px 21.25px;
+       
+        
+      
+    }
+   
+}
+
+@media (max-width: 801px){
+
+  .char_wrapper{
+          
+    padding: 0 23.25px;
+}
+.person_link{
+  
+    
+    margin: 25px 23.25px;
+    width: 280px;
+    
+  
+}
+.front:before,
+.front img,
+.card{
+  width: 280px !important;
+  height: 100% !important;
+}
+.person_link_title{
+  display: block;
+  margin-top: 10px;
+}
+  .char_title{
+    font-size: 35px !important; 
+    padding-bottom: 15px !important;
+  }
+}
+
+  
+  @media (max-width: 768px){
+   
+  
+  
+}
+  
+
+  
+  
+  @media (max-width: 500px){
+
+    .return_to_char_btn{
+        font-size: 20px !important;
+    }
+    .char_wrapper{
+            
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .person_link{
+      
+        
+        margin: 25px 0;
+        width: 300px;
+        
+      
+    }
+    .front:before,
+    .front img,
+    .card{
+      width: 300px !important;
+      height: 100% !important;
+    }
+}
+  
+  
+  
+  @media (max-width: 426px){
+
+    .person_img{
+        margin-bottom: 30px ;
+    }
+    
+}
+  
+
+  
+  @media(max-width: 376px){
+    
+
+    .person_info{
+        margin: 0 10px;
+    }
+    .person_info p{
+        font-size: 16px;
+        
+    }
+}
+  @media(max-width: 321px){
+
+    .person_link{
+  
+    
+      
+      width: 250px;
+      
+    
+  }
+  .front:before,
+  .front img,
+  .card{
+    width: 250px !important;
+    height: 100% !important;
+  }
+   
+}

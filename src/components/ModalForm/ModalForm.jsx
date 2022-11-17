@@ -33,7 +33,7 @@ export const ModalForm=observer(({closeForm})=>{
     
         const success = () => {
             Modal.success({
-              content: 'Данные оттправлены успешно!',
+              content: 'Данные отправлены успешно!',
             });
           };
     

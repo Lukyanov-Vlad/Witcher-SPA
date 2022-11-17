@@ -1,5 +1,6 @@
 import cartStore from "../../stores/CartStore/CartStore"
 import '../../styles/cart.css'
+import '../../styles/media/mediaCart.css'
 import { CartItem } from "./components/CartItem";
 
 import {observer} from 'mobx-react-lite'
@@ -29,7 +30,7 @@ export const Cart=observer(()=>{
                                 {cart && cart.map((item,index)=><CartItem key={item.id} productInCart={item} index={index}/>)}
                             </div>
                             <div className="total_price">
-                                {getTotalPrice} $
+                                <span>Итоговая стоимость: </span>{getTotalPrice} $
                             </div>
                             <div className="cart_buttons">
                                 <button className="cart_button" onClick={clickHandler}>

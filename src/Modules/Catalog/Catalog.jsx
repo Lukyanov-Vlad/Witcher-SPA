@@ -1,3 +1,4 @@
+import '../../styles/media/mediaCatalog.css'
 import '../../styles/catalog.css'
 import { CatalogItems } from './components/CatalogItems'
 import { Category } from './components/Category'

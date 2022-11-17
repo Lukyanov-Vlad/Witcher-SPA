@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Loader = () => {
+export const Loader = () => {
 
     return(
     <div className="container  loader_wrapper">
@@ -13,4 +13,3 @@ const Loader = () => {
 
   
 
-export default Loader;

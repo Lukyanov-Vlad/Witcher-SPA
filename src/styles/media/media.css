@@ -1,0 +1,855 @@
+@media (max-width: 1280px){
+    .container{
+      width: 1100px;
+    }
+    .nav_link{
+        font-size: 18px !important;
+    }
+    .dropdown-content{
+      width: 189.5px;
+    }  
+    .nav_link:hover:after,
+    .nav_link:hover:before{
+      width: 58px;
+      height: 58px;
+    }
+
+    .pers_link:hover::before,
+    .pers_link:hover::after{
+    
+      width: 58px;
+      height: 58px;
+     
+  }
+
+    .banner{
+        height: 670px;
+    }
+    .ability_item_img{
+      width:  300px;
+      height: 300px;
+    }
+    .img_abil{
+      
+      height: 270px;
+    }
+    .ability_item_text{
+      font-size: 18px;
+    }
+    
+    .ability_item:nth-child(odd) .ability_item_text{
+     
+      margin-right: 15px;
+  }
+  .ability_item:nth-child(even) .ability_item_text{
+     
+    margin-left: 15px;
+}
+.ant-image-preview-img{
+  width: 1000px;
+  height: auto;
+}
+.location_grid{
+ 
+  width: 910px;
+  
+  grid-template-columns: 270px 270px 270px;
+  grid-column-gap: 50px;
+  grid-template-rows: auto;
+  
+}
+.location_item .h3_title{
+  font-size: 25px;
+}
+.location_description{
+  font-size: 18px;
+}
+.carousel{
+  width: 800px;
+
+}
+.carousel_item_img{
+ 
+   width: 250px;
+   margin-right: 20px;
+  
+}
+.button_left {
+  margin-right: 30px;
+}
+.button_right {
+  margin-left: 30px;
+}
+
+
+  
+}
+
+@media (max-width: 1152px){
+    .container{
+        width: 1000px;
+    }
+    .padding_top{
+      padding-top: 97.64px;
+    }
+    .header_logo{
+      margin-right: 20px;
+    }
+    .navigation .nav_link{
+     
+      padding: 8px 25px !important;
+  }
+  .pers_link:hover::before,
+  .pers_link:hover::after{
+  
+    width: 53px;
+    height: 53px;
+   
+}
+    .nav_link:hover:after,
+    .nav_link:hover:before{
+      width: 53px;
+      height: 53px;
+    }
+    .dropdown-content .nav_link,
+    .dropdown-content{
+      width: 150px;
+      text-align: center;
+    }
+    .dropdown-content .nav_link{
+      padding: 10px 15px;
+    }
+  .banner{
+    height: 680px;
+  }
+  .h1_text_title{
+    font-size: 40px;
+  }
+  .ability_item_text{
+    font-size: 16px;
+  }
+  .button_left {
+    margin-right: 20px;
+  }
+  .button_right {
+    margin-left: 20px;
+  }
+  .footer_logo_img{
+    width: 270px;
+  }
+}
+
+@media (max-width: 1024px){
+    .container{
+      width: 920px !important;
+    }
+    .log_img {
+      width: 160px;
+    }
+    .dropdown-content .nav_link{
+      margin-bottom: 0 !important;
+    }
+    .nav_and_cart{
+        align-items: center;
+    }
+    .dropdown-content{
+      background-color: rgba(0,0,0,.9);
+      left: 1px !important;
+    }
+    .cart_link{
+      margin-top: 5px;
+      margin-right: 15px;
+    }
+    .banner{
+      height: 650px;
+    }
+  
+
+  
+  .hello_text_desc{
+    text-align: justify;
+  }
+  .ability_item{
+    align-items: flex-start;
+  }
+  .location_grid{
+    width: 900px;
+    grid-template-columns: 250px 250px 250px;
+    grid-column-gap: 75px;
+    grid-template-rows: auto;
+   
+  }
+  .location_item .h3_title{
+    font-size: 22px;
+  }
+  .location_description{
+    font-size: 17px;
+    
+  }
+
+  .carousel{
+    width: 700px;
+  
+  }
+  .carousel_item_img{
+   
+     width: 220px;
+     margin-right: 15px;
+    
+  }
+  .button_left {
+    margin-right: 30px;
+  }
+  .button_right {
+    margin-left: 30px;
+  }
+  .carousel_button,
+  .carousel_button:before{
+    width: 40px;
+    height: 40px;
+  }
+  .arrow_right{
+    top: 6px;
+    left: 12px
+  }
+  .arrow_left{
+    top: 6px;
+    left: 8px
+  }
+  
+}
+
+@media (max-width: 801px){
+  .container{
+    width: 700px !important;
+    margin: 0 auto;
+  }
+  /*-------------------------------------------------*/
+  
+  .header  .nav_wrapper{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    padding-top: 120px;
+    position: fixed;
+    top: 0;
+    transition: .3s;
+
+    height: 100%;  
+    background-color: hsla(0, 0%, 0%, 0.9);  
+    
+}
+.header .nav_link{
+margin-bottom: 20px;
+margin-right: 0;
+text-align: center;
+width: 100%;
+}
+
+.header .pers_link{
+display: block;
+text-align: center;
+padding: 8px 25px;
+
+}
+.nav_link .pers_link{
+margin-bottom: 0 !important;
+}
+.hidden{
+right: -100%;
+
+}
+.visible {
+right: 0;
+
+}
+.nav_and_cart{
+flex-direction: row-reverse;
+justify-content: flex-start;
+}
+  .dropdown-content {
+    
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+   
+    z-index: 2;
+  }
+  .nav_link:hover:before,
+  .nav_link:hover:after,
+  .pers_link:hover::after{
+    display: none;
+  }
+
+  .btn_menu{
+      margin-right: 10px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-color: transparent;
+      border: none;
+      position: relative;
+      z-index: 3;
+  }
+
+ 
+  .btn_menu:hover{
+      cursor: pointer;
+  }
+  .line{
+      width: 80%;
+      position: relative;
+  }
+  .line::after{
+      top:15px;
+  }
+  .line::before{
+      top:-15px;
+  }
+  .line::after,
+  .line::before{
+     content: ''; 
+     width: 100%;
+     position: absolute;
+     left:0;
+  }
+  
+  .line,
+  .line::after,
+  .line::before{
+      height: 4px;
+      display: inline-block;
+      background-color: #fff;
+      transition: .3s;
+  }
+  .clicked .line{
+    background: transparent;
+  }
+  .clicked .line::after,
+  .clicked .line::before{
+        top:0;
+  }
+  .clicked .line::before{
+    transform: rotate(45deg);
+  }
+  .clicked .line::after{
+    transform: rotate(-45deg);
+  }
+  /*-------------------------------------------------*/
+  .padding_top{
+    padding-top: 87.93px;
+  }
+  .banner{
+    background-position: center;
+    background-size: cover;
+    height: 530px;
+  }
+  .log_img{
+    width: 140px;
+  }
+  .hello_text .h1_text_title{
+    font-size: 38px;
+  }
+  .h2_title{
+    padding: 30px 0;
+  }
+  .trailer{
+    display: block;
+    margin: 0 auto;
+    width: 550px !important;
+    height: 350px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .ability .h2_title{
+      padding-top: 5px ;
+      padding-bottom: 55px;
+  } 
+  .ability_item{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    margin-bottom:50px;
+    padding-bottom: 0;
+    align-items: center;
+    text-align: justify;
+  }
+  .ability_item_img{
+    width:  300px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .img_abil:hover{
+    box-shadow: 0 0 50px #db3138;
+  }
+  .ability_item:nth-child(odd) .img_abil,
+  .ability_item:nth-child(even) .img_abil{
+    transform: none;
+
+  }
+  .ability_item:nth-child(even) .ability_item_text{
+    text-align: left;
+  }
+  .ability_item:nth-child(even) .ability_item_text,
+  .ability_item:nth-child(odd) .ability_item_text{
+    font-size: 20px;
+    margin-right: 25px;
+    opacity: 1;
+    margin-left: 25px;
+    max-width: 100%;
+  }
+  .ability_item:nth-child(even){
+    flex-direction: column;
+    border: none;
+    width: 100%;
+    margin-right: 25px;
+  }
+  .ability_item:last-child{
+    margin-bottom: 30px;
+  }
+  .location_grid{
+    width: 600px;
+    grid-template-columns:600px;
+    grid-template-rows: auto auto auto;
+    
+   row-gap: 40px;
+   
+  }
+  .location_item .h3_title{
+    font-size: 25px;
+  }
+  .location_description{
+    font-size: 20px;
+    max-width: 100% !important;
+    margin-right: 25px;text-align: justify;
+  }
+  .carousel_section .h2_title{
+    padding-bottom: 40px;
+  }
+  .carousel{
+    width: 400px;
+  }
+  .carousel_item_img{
+    width: 400px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .footer_bottom_menu{
+    display: none;
+  }
+  .footer_logo_img{
+     width: 250px;
+  }
+ 
+}
+
+  
+  @media (max-width: 768px){
+   
+    .banner{
+      height: 730px;
+    }
+  
+  }
+  
+
+  
+  
+  @media (max-width: 500px){
+    .ant-form-item-explain-error{
+        margin-bottom: 10px;
+    }
+    .container{
+      width: 450px !important;
+    }
+    .trailer{
+      width: 400px !important;
+    }
+    .h2_title{
+      font-size: 35px;
+    }
+    .ability_item:last-child{
+      margin-bottom: 0;
+    }
+    .dropdown-content .nav_link{
+      padding:8px 15px !important;
+    
+    }
+    .location_grid{
+      width: 400px;
+      grid-template-columns:400px;
+      grid-template-rows: auto auto auto;
+      
+     row-gap: 40px;
+     
+    }
+    .location_item .h3_title{
+      font-size: 25px;
+    }
+    .location_description{
+      font-size: 20px;
+      max-width: 100% !important;
+      margin-right: 0;
+    }
+    .button_left,.button_right, .carousel_button:before{
+     display: none;
+    }
+    .carousel_section .h2_title{
+      padding-bottom: 20px;
+    }
+    .carousel_desc{
+      display: block;
+      font-size: 16px;
+      color: white;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 200;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form_email{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .input_email{
+      width: 400px;
+      margin-bottom: 20px;
+    }
+    .button_email{
+      border-radius: 5px;
+    }
+    .footer_bottom_wrapper{
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer_logo_link{
+      display: block;
+     
+    }
+    .footer_under .container{
+     flex-direction: column;
+    }
+    .footer_under_left{
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+    .footer_under_right{
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .form_header .h3_title{
+      font-size: 28px;
+      padding-left: 0;
+    }
+    .ant-form-horizontal .ant-form-item-label{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding-bottom: 0;
+    }
+   
+    .form_input,
+    .form_area{
+      width: 400px;
+      font-size: 16px !important;
+    }
+    .modal_wrapper{
+      padding: 20px;
+    }
+    .ant-form-item-label>label{
+      font-size: 16px;
+    }
+    .modal_checkbox span{
+      font-size: 14px;
+    }
+    .form_area{
+      height: 200px;
+    }
+   
+  }
+  
+  
+  
+  @media (max-width: 426px){
+    .container{
+      width: 400px !important; 
+    }
+    .banner{
+      height: 650px;
+    }
+    .banner_btn{
+      font-size: 22px;
+    }
+    .h1_text_title{
+        font-size: 32px !important;
+    }
+    .hello_text_desc{
+      font-size: 20px;
+    }
+   .h2_title{
+      font-size: 28px;
+    }
+    .trailer{
+      width: 380px !important;
+      height: 250px !important;
+    }
+    .ability_item:nth-child(even) .ability_item_text, .ability_item:nth-child(odd) .ability_item_text{
+      margin-left: 15px;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+    .location_grid{
+      width: 380px;
+      grid-template-columns:380px;
+      grid-template-rows: auto auto auto;
+      
+     row-gap: 40px;
+     
+    }
+    .location_item .h3_title{
+      font-size: 22px;
+    }
+    .location_description{
+      font-size: 18px;
+      max-width: 100% !important;
+      margin-right: 0;
+    }
+    .carousel_desc{
+      font-size: 14px !important;
+    }
+    .carousel{
+      width: 380px;
+    }
+    .carousel_item_img{
+      width: 380px;
+    
+    }
+    .footer_link{
+      font-size: 17px;
+    }
+    .footer_logo_img{
+      padding-top: 30px;
+    }
+    .input_email{
+      width: 380px;
+      font-size: 18px !important;
+    }
+    .form_input,
+    .form_area{
+      width: 360px;
+      font-size: 16px !important;
+    }
+    .modal_wrapper{
+      padding: 20px;
+    }
+    .carousel_wrapper{
+      padding-bottom: 40px;
+    }
+    .footer_top .h3_title{
+      font-size: 23px;
+      width: 370px;
+      margin: 0 auto;
+    }
+    .footer_top{
+      padding-bottom: 30px;
+    }
+    .footer_bottom{
+        padding: 35px 0;
+    }
+    .ant-modal-confirm-body .ant-modal-confirm-title{
+      font-size: 18px;
+    }
+    .ant-modal-confirm-body .ant-modal-confirm-content, .ant-modal-confirm-body>.anticon+.ant-modal-confirm-title+.ant-modal-confirm-content{
+      font-size:16px;
+    }
+  }
+  
+
+  
+  @media(max-width: 376px){
+    
+    .container{
+      width: 340px !important;
+    }
+    .dropdown-content .nav_link{
+      width: 170px;
+      padding:8px 8px !important;
+     
+    }
+    .h1_text_title{
+      font-size: 30px !important; 
+    }
+    .hello_text_desc{
+      font-size: 18px;
+    }
+    .trailer{width: 300px !important;}
+     .h2_title{
+      font-size: 25px;
+     }
+     .ability_item{
+        margin-bottom: 35px;
+     }
+     .ability_item_img{
+      margin-bottom: 30px !important;
+      height: 250px !important;
+      width: 250px;
+     }
+     .ability_item:nth-child(even) .ability_item_text, .ability_item:nth-child(odd) .ability_item_text{
+      font-size: 16px;
+     }
+     .img_abil{
+      box-shadow: 0 0 40px #db3138;
+      width: 250px;
+      height: 250px;
+     }
+     .location_grid{
+      width: 300px;
+      grid-template-columns:300px;
+      grid-template-rows: auto auto auto;
+      
+     row-gap: 30px;
+     
+    }
+    .location_item .h3_title{
+      font-size: 20px;
+    }
+    .location_description{
+      font-size: 17px;
+      
+    }
+    .carousel_desc {
+       font-size: 12px !important;
+    } 
+    .carousel{
+      width: 310px;
+    }
+    .carousel_item_img{
+      width: 310px;
+    
+    }
+    .footer_top .h3_title{
+      font-size: 21px;
+      width: 320px;
+      margin: 0 auto;
+    }
+    .input_email{
+      width: 320px;
+      font-size: 16px !important;
+    }
+    .button_email{
+      font-size: 16px;
+    }
+    .footer_link{
+      padding: 10px 15px;
+    }
+    .footer_logo_img{
+      padding-top: 20px;
+    }
+    .modal_wrapper{
+      padding: 20px 10px;
+    }
+    .modal_wrap{
+      width: 340px;
+    }
+    .form_input,
+    .form_area{
+      width: 330px;
+    
+    }
+    .modal_checkbox span{
+      font-size: 12px;
+    }
+    .ant-modal-confirm-content{
+      text-align: center;
+      font-size: 18px !important;
+     margin-left: 0 !important;
+     width: 300px;
+     margin: 15px auto !important;
+    }
+  }
+  @media(max-width: 321px){
+    .container{
+      width: 290px !important;
+    }
+    .padding_top{
+      padding-top: 70px;
+    }
+    .log_img{
+      width: 100px;
+    }
+    .nav_wrapper{
+      width: 170px !important;
+    }
+   .banner{
+    height: 635px;
+   }
+   .h1_text_title {
+    font-size: 23px !important;
+    padding-bottom: 20px;
+}
+.h2_title{
+  font-size: 20px;
+}
+.hello_text_desc{
+  font-size: 15px;
+}
+.trailer{
+  width: 280px !important;
+}
+.ability_item_img,
+.img_abil{
+  width: 200px;
+  height: 200px !important;
+  margin-bottom: 0;
+}
+.location_grid{
+  width: 270px;
+  grid-template-columns:270px;
+  grid-template-rows: auto auto auto;
+  
+ row-gap: 25px;
+ 
+}
+.location_item .h3_title{
+  font-size: 19px;
+}
+.location_description{
+  font-size: 16px;
+  
+}
+.carousel{
+  width: 275px;
+}
+.footer_top .h3_title,
+.carousel_item_img{
+  width: 275px;
+
+}
+.input_email{
+  width: 270px;
+}
+.modal_wrap{
+  width: 300px;
+}
+.form_input,
+.form_area{
+  width: 270px;
+  font-size: 14px !important;
+}
+.footer_link{
+  padding: 10px 10px;
+  font-size: 15px;
+}
+.ant-modal-confirm-content{
+  
+  font-size: 16px !important;
+ margin-left: 0 !important;
+ width: 250px;
+ margin: 15px auto !important;
+}
+
+  }

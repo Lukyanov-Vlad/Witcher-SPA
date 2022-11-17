@@ -1,7 +1,7 @@
 import { observer } from "mobx-react-lite";
 
 import { useEffect } from "react";
-import Loader from "../../../../components/Loader/Loader";
+import { Loader } from "../../../../components/Loader";
 import catalogStore from "../../stores/CatalogStore"
 import { CatalogItem } from "./components/CatalogItem";
 import { useState } from "react";
@@ -33,6 +33,7 @@ export const CatalogItems=observer(()=>{
     
    
     return(
+    <>
         <div className="catalog_wrapper">
         {loadingCatalogStatus && <Loader/>}
        
@@ -40,13 +41,14 @@ export const CatalogItems=observer(()=>{
         
       
   
-        {!loadingCatalogStatus && catalog && <Pagination onChange={(value)=>{setCurrentPage(value)}}
-                                                   
-                                                    total={catalog.length}
-                                                    pageSize={catalogPerPage}
-                                                    current={currentPage}
-                                                    />}
-        </div>
        
+        </div>
+         {!loadingCatalogStatus && catalog && <Pagination onChange={(value)=>{setCurrentPage(value)}}
+                                                   
+         total={catalog.length}
+         pageSize={catalogPerPage}
+         current={currentPage}
+         />}
+     </>  
     )
 })

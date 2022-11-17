@@ -4,17 +4,18 @@ import {observer} from 'mobx-react-lite'
 import cartModalStore from './stores/CartModalStore';
 
 export const CartModal=observer(()=>{
-    const {cart,getTotalPrice,clearCart}=cartStore;
+    const {cart,getTotalPrice,clearCart,addToOrders}=cartStore;
     const {modalVisible,setVisible}=cartModalStore
-    console.log('here');
+   
         const success = () => {
             Modal.success({
-            content: 'Заказ оформлен!',
+            content: 'Заказ оформлен! Ожидайте информацию по доставке!',
             });
         };
       const handleOk = () => {
 
         setVisible(false);
+        addToOrders();
         clearCart();
         success();
       };
@@ -23,11 +24,11 @@ export const CartModal=observer(()=>{
       };
     return(
      
-         <Modal  open={modalVisible} onOk={handleOk} onCancel={handleCancel} className='cart_modal'>
+         <Modal  open={modalVisible} onOk={handleOk} onCancel={handleCancel} okText='Оплатить' className='cart_modal'>
             <h3 className='h3_title'>Ваш заказ:</h3>
            
                 <div className="order_details">
-                    {cart.map(({id,title,price,count},index)=><li key={index}>{index+1}. {title} - {count} шт. - {price*count} $.</li>)}
+                    {cart.map(({title,price,count},index)=><li key={index} className='order_details_item'>{index+1}. {title} - {count} шт. - {price*count} $.</li>)}
                 </div>
            
                

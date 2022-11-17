@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 import 'antd/dist/antd.min.css'
 import './styles/font-awesome.min.css'
 import './styles/style.css'
+import './styles/media/media.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

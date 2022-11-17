@@ -9,8 +9,9 @@ export const CarouselComponent=()=>{
         
        
         return (
-          <>
+          <div className='carousel_section'>
               <h2 className="h2_title">Скриншоты игры:</h2>
+              <p className='carousel_desc'>( Проведите пальцем влево/вправо )</p>
               <div className='carousel_wrapper'>
                             <div className='button_left'>
                                 <button onClick={()=>{ref.current.prev();}} className='carousel_button'><img src='https://imageup.ru/img168/4062734/arrow_l.png' className='arrow_left'/></button>
@@ -66,7 +67,7 @@ export const CarouselComponent=()=>{
                               </div>
                 
               </div>
-          </> 
+          </div> 
             
           
         );

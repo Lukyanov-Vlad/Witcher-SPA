@@ -1,7 +1,7 @@
 import { makeAutoObservable } from "mobx";
 
 class CartStore{
-
+    orders=JSON.parse(localStorage.getItem('orders')) || [];
     cart= JSON.parse(localStorage.getItem('cart')) ||  [];
 
     modalVisible=false;
@@ -13,7 +13,10 @@ class CartStore{
     }
 
 
-    
+    addToOrders(){
+        this.orders.push(this.cart);
+        localStorage.setItem('orders',JSON.stringify(this.orders));
+    }
 
     addToCart(product){
         

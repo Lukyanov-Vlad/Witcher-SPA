@@ -12,7 +12,7 @@ export class PersonStore{
     }
 
     async loadPerson(id){
-        console.log(id)
+       
         this.loadingPersonStatus=true;
         try{
             const response=await fetch(`http://localhost:3001/pers/${id}`);

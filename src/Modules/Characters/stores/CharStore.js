@@ -25,7 +25,7 @@ class CharStore{
            const data=await response.json();
             runInAction(()=>{
                 this.charList=[...data];
-                console.log(this.charList)
+              
                 if(persCat!=='all'){
                    
                   

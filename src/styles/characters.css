@@ -1,13 +1,37 @@
 *{
     margin: 0;
     padding: 0;
-    color: white;
+   
 }
-
+.color{
+    color: #F7B64B ;
+}
 .char_wrapper{
     display: flex;
+    flex-wrap: wrap;
+    padding: 0 47.5px;
 }
+.person_link{
+   
+    display: flex;
+    flex-direction: column;
+    margin: 25px 47.5px;
+    width: 300px;
+    /* width: calc(25% - 20px);
+    margin: 20px 10px; */
+   
+}
+.person_link_title{
+    display: none;
+    text-align: center;
+    font-size: 24px;
+ 
+    font-family: 'Inter';
+    font-weight: 500;
+    margin-top:15px;
+    color: white;
 
+}
     .card{
        
         width:300px;
@@ -79,7 +103,39 @@
     }
    
     
-    
-    
+    .person_wrapper{
+        padding-top: 30px;
+        display: flex;
+       
+    }
+    .person_img{
+        flex: 0 0 auto;
+        margin: 0 20px;
+    }
+    .person_image{
+       width: 100%;
+    }
+    .person_info{
+        color: antiquewhite;
+        font-family: 'Inter';
+        font-weight: normal;
+        text-indent: 20px;
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    .return_to_char{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .return_to_char_btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        margin-right: 0 !important;
+        margin: 20px 0;
+        
+       
+    }
     
   

@@ -40,13 +40,13 @@ class BestiariumStore{
     
     loadMonstersByCategory(idCategory){
         if(this.monsterList){
-            console.log('Запустили загрузку по категориям')
+          
             this.loadingMonstersByCategory=true;
             const category=this.mostersCategories.find(({id})=>id===idCategory);
             const {name_moster_cats}=category;
             this.monstersByCategory=[...this.monsterList.filter(({moster_cats})=>moster_cats===name_moster_cats)];
             this.loadingMonstersByCategory=false;
-            console.log(this.monstersByCategory)
+           
         }
        
         

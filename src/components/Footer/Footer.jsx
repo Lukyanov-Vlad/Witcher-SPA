@@ -8,6 +8,7 @@ import connectionStore from "../../stores/ConnectionStore/ConnectionStore"
 import {useForm} from 'react-hook-form'
 import { useRef } from "react"
 
+
 export const Footer =()=>{
     const formRef=useRef()
     const{ addEmails }=connectionStore;
@@ -32,7 +33,7 @@ export const Footer =()=>{
     
         const success = () => {
             Modal.success({
-              content: 'Данные оттправлены успешно!',
+              content: 'Данные отправлены успешно!',
             });
           };
           
@@ -110,7 +111,7 @@ export const Footer =()=>{
                             <button  className='footer_link' onClick={changeVisible}>Обратная связь</button>
                         </div>
                         <div className="footer_bottom_logo">
-                            <Link to='/'><img className='footer_logo_img' src="https://imageup.ru/img215/4065132/1200px-cd_projekt_logosvg.png" alt="CD Project Red"/></Link>
+                            <Link to='/' className="footer_logo_link"><img className='footer_logo_img' src="https://imageup.ru/img215/4065132/1200px-cd_projekt_logosvg.png" alt="CD Project Red"/></Link>
                         </div>
                     </div>
                 </div>

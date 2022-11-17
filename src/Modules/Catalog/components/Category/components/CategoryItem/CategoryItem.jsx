@@ -11,7 +11,7 @@ export const CategoryItem=({category})=>{
             backgroundImage:`url(${cats_img})`,
            
         }} onClick={clickHandler}>
-                {cats_title}
+                <span className="category_item_title">{cats_title}</span>
         </button>
     )
 }

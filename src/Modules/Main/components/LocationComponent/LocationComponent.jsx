@@ -1,7 +1,7 @@
 import Item from "antd/lib/list/Item";
 import { observer } from "mobx-react-lite";
 import { useEffect } from "react";
-import Loader from "../../../../components/Loader/Loader";
+import {Loader} from "../../../../components/Loader";
 import { LocationItem } from "./components/LocationItem";
 import locationStore from "./stores/LocationStore"
 

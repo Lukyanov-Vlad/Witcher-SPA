@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import abilityStore from "./stores/AbilityStore"
 import { observer }  from 'mobx-react-lite'
 import { AbilityItem } from "./components/AbilityItem";
-import Loader from "../../../../components/Loader/Loader";
+import {Loader} from "../../../../components/Loader";
 
 
 export const AbilityComponent=observer(()=>{

@@ -8,6 +8,7 @@ import { Product } from "./Modules/Product";
 import { Characters } from './Modules/Characters'
 import { Person } from "./Modules/Person/Person";
 import { Bestiarium } from "./Modules/Bestiarium";
+import { Monster } from "./Modules/Monster";
 
 
 function App() {
@@ -16,15 +17,20 @@ function App() {
      
       <Routes>
         <Route path='/' element={<Layout />}>
-            <Route index element={<Main />}></Route>
-            <Route path='/catalog' element={<Catalog />}></Route>
-            <Route path='/catalog/:idProduct' element={<Product />}></Route>
-             <Route path='/cart' element={<Cart />}></Route>
-             <Route path='/characters' element={<Characters />}></Route>
-             <Route path='/characters/:persCat' element={<Characters />}></Route>
+              <Route index element={<Main />}></Route>
 
-             <Route path='/characters/:persCat/:personId' element={<Person />}></Route>
+              <Route path='/catalog' element={<Catalog />}></Route>
+              <Route path='/catalog/:idProduct' element={<Product />}></Route>
+
+              <Route path='/cart' element={<Cart />}></Route>
+
+             
+              <Route path='/characters/:persCat' element={<Characters />}></Route>
+              <Route path='/characters/:persCat/:personId' element={<Person />}></Route>
+
              <Route path='/monsters' element={<Bestiarium />}></Route>
+             <Route path='/monsters/:idMonster' element={<Monster />}></Route>
+             
         </Route>
         
       </Routes>

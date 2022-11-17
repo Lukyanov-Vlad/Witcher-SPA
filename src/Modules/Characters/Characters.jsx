@@ -3,15 +3,16 @@ import { useParams } from "react-router-dom"
 import charStore from "./stores/CharStore";
 import {observer} from 'mobx-react-lite'
 import {CharItem} from './components/CharItem'
-import Loader from "../../components/Loader/Loader";
+import { Loader } from "../../components/Loader";
 import {Pagination} from 'antd'
 import '../../styles/characters.css'
+import '../../styles/media/mediaCharacters.css'
 
 
 export const Characters =observer(()=>{
-    const p=useParams();
-    console.log(p);
-    const {persCat}=p
+    const {persCat}=useParams();
+   
+    
     const {charList,loadChar,loadingCharStatus,charPerPage,currentPage,setCurrentPage,currentCharData}=charStore;
     useEffect(()=>{
         setCurrentPage(1);
@@ -26,7 +27,7 @@ export const Characters =observer(()=>{
         <div className="main padding_top">
 
             <div className="container">
-                <h1 className="h1_text_title">Персонажи</h1>
+                <h1 className="h1_text_title char_title">Персонажи</h1>
                 <div className="char_wrapper">
 
                     {loadingCharStatus && <Loader />}
