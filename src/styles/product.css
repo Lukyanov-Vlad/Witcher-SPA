@@ -51,4 +51,5 @@
  .product_btn{
     background: transparent;
     border: none;
+    margin-right: 0 !important;
  }

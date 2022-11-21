@@ -19,7 +19,7 @@
    
    
     background: #DB3138;
-    background: linear-gradient(to top, #f61828, #DB3138);
+    background: linear-gradient(to top, #f61828, #601417);
   
 }
 .catalog_item_options_btn{
@@ -30,7 +30,7 @@
 .catalog_item_options_btn:hover {
     color: #cccccc !important;
     background: #DB3138;
-    background: linear-gradient(to top, #DB3138, #f61828);
+    background: linear-gradient(to top, #f61828, #601417);
     cursor: pointer;
   }
 .category_all_btn{
@@ -158,6 +158,15 @@
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 0;
+}
+.product_price .property{
+    text-shadow: none;
+    margin-right: 10px;
+}
+.product_price{
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow:  0 0 15px #f61828;
 }
 
 @keyframes shine {

@@ -7,6 +7,7 @@ import {Loader} from "../../components/Loader";
 import { observer } from "mobx-react-lite";
 import cartStore from "../../stores/CartStore/CartStore";
 import '../../styles/product.css'
+import '../../styles/media/mediaProduct.css'
 
 export const Product=observer(()=>{
     const {idProduct}=useParams();

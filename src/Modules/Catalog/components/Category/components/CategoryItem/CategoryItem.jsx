@@ -2,9 +2,10 @@ import catalogStore from "../../../../stores/CatalogStore";
 
 export const CategoryItem=({category})=>{
     const {id,cats_title,cats_img}=category;
-    const {setCategoryId}=catalogStore;
+    const {setCategoryId, setCurrentPage}=catalogStore;
     const clickHandler=()=>{
        setCategoryId(id);
+       setCurrentPage(1);
     }
     return(
         <button className="category_item" style={{

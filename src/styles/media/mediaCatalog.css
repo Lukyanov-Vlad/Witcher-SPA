@@ -70,6 +70,27 @@
     .catalog_item_img img{
         width: 200px !important;
     }
+
+
+    .product_wrapper{
+        flex-direction: column;
+    }
+    .product_image_div{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .product_img{
+        width: 200px !important;
+    }
+    .product_rate_div{
+        text-align: center;
+    }
+    .product_rate_div .property{
+        display: none;
+    }
+    .product_rate{
+        margin-left: 0 !important;
+    }
    
 }
 

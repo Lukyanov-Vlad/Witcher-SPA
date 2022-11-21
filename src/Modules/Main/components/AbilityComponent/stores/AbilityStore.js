@@ -28,7 +28,7 @@ class AbilityStore{
                 console.log(err);
             }finally{
                 runInAction(()=>{
-                    this.isCategoriesLoading=false;
+                    this.loadingAbility=false;
                 })
                 
             }

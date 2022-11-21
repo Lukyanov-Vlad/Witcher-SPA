@@ -7,10 +7,10 @@ export const MonsterCategoryItem=({monster})=>{
     return(
         <Link to={`./${id}`} className='monster_category_item_link'>
             <div className="view view-second">
-                <img src={monster_img_preweiw} alt={monster_title} width="300" height="200"/>
+                <img src={monster_img_preweiw} alt={monster_title} className="monster_img"width="300" height="200"/>
             <div className="mask"></div>
                 <div className="content">
-                <h2 id="testimonials">{monster_title}</h2>
+                <h2 id="monster_title">{monster_title}</h2>
                 <p></p>
                 <button className="info">Читать больше....</button>
                 </div>

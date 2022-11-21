@@ -473,8 +473,8 @@ margin-right: 50px;
 .trailer{
    
   
-    width: 560px !important;
-    height:315px !important; 
+    width: 760px !important;
+    height:450px !important; 
   
 }
 /*-----------------------HelloTRailer End---------------------------*/
@@ -1078,6 +1078,27 @@ button.ant-pagination-item-link,
   
    width: 300px;
    margin: 15px auto !important;
+  }
+  .ant-select-selector
+ 
+  {
+    display: none !important;
+    background: transparent !important;
+    border: 2px solid #DB3138 !important; 
+    color: #fff;
+  }
+  .ant-select-dropdown .ant-select-dropdown-placement-bottomLeft  .ant-select-dropdown-hidden{
+    background-color: black;
+  }
+  .ant-pagination-item-ellipsis{
+    color: #fff !important;
+  }
+  .ant-select-arrow{
+    display: none;
+    color: #FFFFFF !important;
+  }
+  .ant-pagination-item-container span svg{
+    color: #FFFFFF !important;
   }
 /*------------------pagination end------------------*/
 

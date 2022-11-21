@@ -18,24 +18,20 @@ class CharStore{
         this.loadingCharStatus=true;
        
         try{
-           const response=await fetch('http://localhost:3001/pers');
+           let response=undefined;
+           if(persCat!=='all'){
+             response=await fetch(`http://localhost:3001/pers?_sort=pers_title&pers_cats_like=${persCat}`);             
+           }else{
+             response=await fetch('http://localhost:3001/pers?_sort=pers_title');
+           }
+           
            if(response.status>=400){
             throw new Error(`Response Error: ${response.statusText}`);
            }
            const data=await response.json();
             runInAction(()=>{
                 this.charList=[...data];
-              
-                if(persCat!=='all'){
-                   
-                  
-                   
-                    const filterChar=this.charList.filter(({pers_cats})=>pers_cats==persCat);
-                    this.charList=filterChar;
-                }
-               
-                const indexOfLastPage=this.currentPage*this.charPerPage;
-                
+                const indexOfLastPage=this.currentPage*this.charPerPage;               
                 const indexOfFirstPage=indexOfLastPage-this.charPerPage;
                 this.currentCharData=this.charList.slice(indexOfFirstPage,indexOfLastPage);
                 this.loadingCharStatus=false;
@@ -44,7 +40,10 @@ class CharStore{
         }catch(err){
             console.log(err);
         }finally{
-            this.loadingCatalogStatus=false;
+            runInAction(()=>{
+                this.loadingCatalogStatus=false;
+            })
+            
         }
     }
     setCurrentPage(page){

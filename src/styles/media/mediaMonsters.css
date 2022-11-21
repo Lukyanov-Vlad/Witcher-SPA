@@ -82,7 +82,7 @@
     max-height: 500px;
   }
   .monster_chekbox:checked ~ #monster_category_items {
-    max-height:2000px;
+    max-height:2500px;
    
   }
   .monster_category_items_wrapper{

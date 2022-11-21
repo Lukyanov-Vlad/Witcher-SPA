@@ -13,17 +13,23 @@ import { Pagination } from "antd";
 
 export const CatalogItems=observer(()=>{
    
-    const [catalogData,setCatalogData]=useState();
+   
    
     
-    const {catalog,categoryId,loadCatalog,loadingCatalogStatus,catalogPerPage,currentCatalogData,setCurrentPage,currentPage}=catalogStore;
+    const {catalog,categoryId,loadCatalog,loadingCatalogStatus,catalogPerPage,currentCatalogData,setCurrentPage,currentPage,categories}=catalogStore;
+    
     useEffect(()=>{
        
-           
+           if(categories){
             loadCatalog(categoryId);
-            setCurrentPage(1);
+           
+            }
+           
           
-    },[categoryId]);
+    },[categoryId,categories]);
+    // useEffect(()=>{
+    //     setCurrentPage(1);
+    // },[categoryId])
     useEffect(()=>{ 
         
         loadCatalog(categoryId);

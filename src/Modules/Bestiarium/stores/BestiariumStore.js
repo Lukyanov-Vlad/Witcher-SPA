@@ -33,7 +33,10 @@ class BestiariumStore{
         }catch(err){
             console.log(err);
         }finally{
-            this.loadingMonsters=false;
+            runInAction(()=>{
+                this.loadingMonsters=false;
+            })
+           
         }
        
     }
@@ -69,7 +72,10 @@ class BestiariumStore{
         }catch(err){
             console.log(err);
         }finally{
-            this.monstersCategoriesLoading=false;
+            runInAction(()=>{
+                this.monstersCategoriesLoading=false;
+            })
+           
         }
        
     }

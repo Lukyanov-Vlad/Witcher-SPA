@@ -28,7 +28,10 @@ export class PersonStore{
         }catch(err){
             console.log(err);
         }finally{
-            this.loadingPersonStatus=false;
+            runInAction(()=>{
+                this.loadingPersonStatus=false;
+            })
+            
         }
        
     }

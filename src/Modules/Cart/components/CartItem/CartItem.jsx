@@ -24,7 +24,7 @@ export const CartItem=({productInCart,index})=>{
                            
                         <div className='cart_item_pay_info'> 
                             <p className='cart_item_count'>Кол-во: <span className='bold'>{count} шт.</span></p> 
-                            <p className='cart_item_price'>Цена: <span className='bold'>{price*count} $</span></p> 
+                            <p className='cart_item_price'>Цена: <span className='bold'>{(price*count).toFixed(2)} $</span></p> 
                         </div>
                                                 
 

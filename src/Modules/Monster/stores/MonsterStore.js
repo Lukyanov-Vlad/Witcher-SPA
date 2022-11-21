@@ -26,7 +26,10 @@ export class MonsterStore{
         }catch(err){
             console.log(err);
         }finally{
-            this.loadingMonsterStatus=false;
+            runInAction(()=>{
+                this.loadingMonsterStatus=false;
+            })
+           
         }
     }
 }

@@ -86,7 +86,10 @@ padding: 30px 0;
 
 }
 
-
+#monster_title{
+  font-family: 'Inter';
+  font-weight: bold;
+}
 
 .monster_item_title{
   font-size: 18px;
@@ -96,7 +99,11 @@ padding: 30px 0;
   display: none;
 }
 
-
+.monster_img{
+  width:300px;
+   height:200px;
+   background-color: #000;
+}
 
 .view {
   
@@ -109,7 +116,9 @@ padding: 30px 0;
   cursor: default;
   background:#000000 ;
 }
-
+ .view-second{
+  background-color: #000;
+}
 .view .mask,
 .view .content {
   width: 300px;
