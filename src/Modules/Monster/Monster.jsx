@@ -33,7 +33,7 @@ export const Monster=observer(()=>{
                                 __html: monster_desc
                                 }
                                 }></div> 
-                       <Link to='../monsters' className="monster_page_link">Вернуться в Бестиарий</Link>
+                       <Link to='..' className="monster_page_link">Вернуться в Бестиарий</Link>
                 </div> }
                
             </div>

@@ -9,6 +9,9 @@ import { Characters } from './Modules/Characters'
 import { Person } from "./Modules/Person/Person";
 import { Bestiarium } from "./Modules/Bestiarium";
 import { Monster } from "./Modules/Monster";
+import { CatalogApp } from "./Modules/Catalog/CatalogApp";
+import { CharactersApp } from "./Modules/Characters/CharactersApp";
+import { BestiariumApp } from "./Modules/Bestiarium/BestiariumApp";
 
 
 function App() {
@@ -17,20 +20,11 @@ function App() {
      
       <Routes>
         <Route path='/' element={<Layout />}>
-              <Route index element={<Main />}></Route>
-
-              <Route path='/catalog' element={<Catalog />}></Route>
-              <Route path='/catalog/:idProduct' element={<Product />}></Route>
-
-              <Route path='/cart' element={<Cart />}></Route>
-
-             
-              <Route path='/characters/:persCat' element={<Characters />}></Route>
-              <Route path='/characters/:persCat/:personId' element={<Person />}></Route>
-
-             <Route path='/monsters' element={<Bestiarium />}></Route>
-             <Route path='/monsters/:idMonster' element={<Monster />}></Route>
-             
+             <Route index element={<Main />}></Route>
+             <Route path='/catalog/*' element={<CatalogApp />}></Route>
+             <Route path='/cart' element={<Cart />}></Route>
+             <Route path='/characters/:persCat/*' element={<CharactersApp />}></Route>
+             <Route path='/monsters/*' element={<BestiariumApp />}></Route>            
         </Route>
         
       </Routes>

@@ -24,7 +24,7 @@ export const Product=observer(()=>{
         
     },[]);
     const clickHandler=()=>{
-        navigate('../catalog')
+        navigate('..')
     }
     const {addToCart}=cartStore;
     const clickForAddedToCart=()=>{

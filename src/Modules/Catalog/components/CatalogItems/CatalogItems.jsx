@@ -27,9 +27,7 @@ export const CatalogItems=observer(()=>{
            
           
     },[categoryId,categories]);
-    // useEffect(()=>{
-    //     setCurrentPage(1);
-    // },[categoryId])
+   
     useEffect(()=>{ 
         
         loadCatalog(categoryId);

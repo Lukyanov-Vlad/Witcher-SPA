@@ -3,9 +3,14 @@
     display: flex;
     padding:30px 40px;
 }
+.product_image_div .ant-image img{
+    width: 167px;
+    height: 313px;
+}
 .product_img{
     border-radius: 20px;
     border: 1px solid #dfcc9a;
+    
 }
 
 .product_rate{

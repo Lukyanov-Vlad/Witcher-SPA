@@ -2633,22 +2633,22 @@
         {
             "id":1,
             "tag":"all",
-            "cats_img":"https://imageup.ru/img68/4066777/nq6_pas3hj0.png"        
+            "pers_cats_title":"Все персонажи"        
         },   
     {
         "id":2,
         "tag":"main_game",
-        "cats_img":"https://imageup.ru/img68/4066777/nq6_pas3hj0.png"        
+        "pers_cats_title":"Персонажи основной игры"   
     },
     {
         "id":3,
-        "cats_title":"dlc1",
-        "cats_img":"https://imageup.ru/img296/4066773/cat6.png"   
+        "tag":"dlc1",
+        "pers_cats_title":"Персонажи дополнения «Каменные сердца»"     
     },
     {
         "id":4,
-        "cats_title":"dlc2",
-        "cats_img":"https://imageup.ru/img193/4066776/bez-imeni-6.png"   
+        "tag":"dlc2",
+        "pers_cats_title":"Персонажи дополнения «Кровь и вино»"    
     }
 
 

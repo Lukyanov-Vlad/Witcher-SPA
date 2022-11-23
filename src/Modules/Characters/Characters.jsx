@@ -13,7 +13,11 @@ export const Characters =observer(()=>{
     const {persCat}=useParams();
    
     
-    const {charList,loadChar,loadingCharStatus,charPerPage,currentPage,setCurrentPage,currentCharData}=charStore;
+    const {charList,loadChar,loadingCharStatus,charPerPage,currentPage,setCurrentPage,currentCharData,persPageTitle,loadingPersTitle,loadTitle}=charStore;
+    useEffect(()=>{
+        
+        loadTitle(persCat);
+    },[persCat])
     useEffect(()=>{
         setCurrentPage(1);
         loadChar(persCat);
@@ -27,7 +31,8 @@ export const Characters =observer(()=>{
         <div className="main padding_top">
 
             <div className="container">
-                <h1 className="h1_text_title char_title">Персонажи</h1>
+                {!loadingPersTitle && persPageTitle &&  <h1 className="h1_text_title char_title">{persPageTitle}</h1>}
+               
                 <div className="char_wrapper">
 
                     {loadingCharStatus && <Loader />}

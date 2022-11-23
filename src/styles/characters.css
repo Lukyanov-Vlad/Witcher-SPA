@@ -24,11 +24,11 @@
 .person_link_title{
     display: none;
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
  
     font-family: 'Inter';
     font-weight: 500;
-    margin-top:15px;
+    margin-top:25px;
     color: white;
 
 }
@@ -93,7 +93,9 @@
     }
     
   
-    
+    .person_back_title{
+        text-align: center;
+    }
     
     .card .back .details h2{
       

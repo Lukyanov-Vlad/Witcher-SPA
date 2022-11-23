@@ -17,7 +17,7 @@ export const Person=observer(()=>{
         loadPerson(personId);
     },[])
     const clickHandler=()=>{
-        navigate(`../characters/${persCat}`);
+        navigate(`..`);
     }
     return(
         <div className="main padding_top">

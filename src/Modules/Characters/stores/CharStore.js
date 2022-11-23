@@ -7,12 +7,47 @@ class CharStore{
     currentPage=1;
     charPerPage=12;
     currentCharData=undefined;
+    persPageTitle=undefined;
+    loadingPersTitle=false;
+
+
+
 
     constructor(){
         makeAutoObservable(this,undefined,{
             autoBind:true,
         })
     }
+ async loadTitle(persCat){
+        this.loadingPersTitle=true;
+       
+        try{
+           let response=undefined;
+          
+             response=await fetch(`http://localhost:3001/pers_category?tag_like=${persCat}`);             
+        
+           
+           if(response.status>=400){
+            throw new Error(`Response Error: ${response.statusText}`);
+           }
+           const data=await response.json();
+           console.log(data[0].pers_cats_title)
+            runInAction(()=>{
+                this.persPageTitle=data[0].pers_cats_title;
+              
+                this.loadingPersTitle=false;
+            });
+           
+        }catch(err){
+            console.log(err);
+        }finally{
+            runInAction(()=>{
+                this.loadingPersTitle=false;
+            })
+            
+        }
+    }
+
 
     async loadChar(persCat){
         this.loadingCharStatus=true;
