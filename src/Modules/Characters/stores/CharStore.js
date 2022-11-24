@@ -31,7 +31,7 @@ class CharStore{
             throw new Error(`Response Error: ${response.statusText}`);
            }
            const data=await response.json();
-           console.log(data[0].pers_cats_title)
+         
             runInAction(()=>{
                 this.persPageTitle=data[0].pers_cats_title;
               

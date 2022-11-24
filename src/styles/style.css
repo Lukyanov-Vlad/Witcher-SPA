@@ -132,7 +132,9 @@ margin-right: 50px;
 }
 
 
-
+/* .all_char_link{
+    display: none !important;
+} */
 .pers_link:hover::after{
     content: '';
     width: 63px;
@@ -143,6 +145,9 @@ margin-right: 50px;
     position: absolute;
     top:-8px;
     right: -8px;
+}
+#char_burger_check{
+    display: none;
 }
 .dropdown {
     position: relative;
