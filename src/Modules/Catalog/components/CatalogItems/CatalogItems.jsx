@@ -2,9 +2,9 @@ import { observer } from "mobx-react-lite";
 
 import { useEffect } from "react";
 import { Loader } from "../../../../components/Loader";
-import catalogStore from "../../stores/CatalogStore"
+import catalogStore from "../../../../stores/CatalogStore/CatalogStore"
 import { CatalogItem } from "./components/CatalogItem";
-import { useState } from "react";
+
 import { Pagination } from "antd";
 
 

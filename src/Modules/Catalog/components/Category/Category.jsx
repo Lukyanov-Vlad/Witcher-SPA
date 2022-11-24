@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import catalogStore from "../../stores/CatalogStore"
+import catalogStore from "../../../../stores/CatalogStore/CatalogStore"
 import { Loader } from "../../../../components/Loader"
 import { observer }  from 'mobx-react-lite'
 import { CategoryItem } from "./components/CategoryItem"

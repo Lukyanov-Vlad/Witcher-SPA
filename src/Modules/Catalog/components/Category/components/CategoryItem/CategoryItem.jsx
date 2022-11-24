@@ -1,4 +1,4 @@
-import catalogStore from "../../../../stores/CatalogStore";
+import catalogStore from "../../../../../../stores/CatalogStore/CatalogStore";
 
 export const CategoryItem=({category})=>{
     const {id,cats_title,cats_img}=category;

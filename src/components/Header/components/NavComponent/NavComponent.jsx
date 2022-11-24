@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import { useEffect } from "react";
+import catalogStore from "../../../../stores/CatalogStore/CatalogStore";
 export const NavComponent=()=>{
     const [burgerClass,setBurgerClass]=useState('btn_menu unclicked');
     const [menuClass,setMenuClass]=useState('nav_wrapper hidden');
@@ -16,8 +17,13 @@ export const NavComponent=()=>{
         }
    },[isMenuCLicked])
    
-   
-  
+    const {setCategoryId, setCurrentPage} =catalogStore;
+    const ClickHanler=()=>{
+        setCategoryId(undefined);
+        setCurrentPage(1);
+        setIsMenuCLicked(false);
+        
+    }
     return(
         <div className="navigation">
             <button className={burgerClass} onClick={()=>{setIsMenuCLicked(!isMenuCLicked)}}>
@@ -36,7 +42,7 @@ export const NavComponent=()=>{
                 </div>
                 </div>
                 <Link to='/monsters' className='nav_link' onClick={()=>{setIsMenuCLicked(false)}}>Бестиарий</Link>
-                <Link to='/catalog' className='nav_link' onClick={()=>{setIsMenuCLicked(false)}}>Магазин карт</Link>
+                <Link to='/catalog' className='nav_link' onClick={ClickHanler}>Магазин карт</Link>
             </div>
         </div>
     )
