@@ -3,6 +3,7 @@ import { useState } from "react"
 import { useEffect } from "react";
 import catalogStore from "../../../../stores/CatalogStore/CatalogStore";
 import { useRef } from "react";
+import charStore from "../../../../Modules/Characters/stores/CharStore";
 export const NavComponent=()=>{
     const [burgerClass,setBurgerClass]=useState('btn_menu unclicked');
     const [menuClass,setMenuClass]=useState('nav_wrapper hidden');
@@ -25,14 +26,21 @@ export const NavComponent=()=>{
    },[isMenuCLicked])
    
     const {setCategoryId, setCurrentPage} =catalogStore;
-   
+    const {setCurrentPageChar}=charStore;   
+    
+    const clickCharHandler=()=>{
+        setCurrentPageChar(1);
+        clickLinkHandler();
+    }
     const clickLinkHandler=()=>{
         setIsMenuCLicked(!isMenuCLicked);
         ref.current.checked=false;
+      
     }
     const сlickСatalogHandler=()=>{
         setCategoryId(undefined);
         setCurrentPage(1);
+      
         clickLinkHandler();
     }
     return(
@@ -47,10 +55,10 @@ export const NavComponent=()=>{
                 <input ref={ref} type="checkbox" id='char_burger_check' />
                 <label htmlFor="char_burger_check"   className='nav_link pers_link'>Персонажи</label>
                 <div className="dropdown-content">
-                    <Link to='/characters/all' className='nav_link all_char_link' onClick={clickLinkHandler}>Все</Link>
-                    <Link to={`/characters/main_game`} className='nav_link' onClick={clickLinkHandler}>Дикая охота</Link>
-                    <Link to={`/characters/dlc1`} className='nav_link' onClick={clickLinkHandler}>Каменные сердца</Link>
-                    <Link to={`/characters/dlc2`} className='nav_link' onClick={clickLinkHandler}>Кровь и вино</Link>
+                    <Link to='/characters/all' className='nav_link all_char_link' onClick={clickCharHandler}>Все</Link>
+                    <Link to={`/characters/main_game`} className='nav_link' onClick={clickCharHandler}>Дикая охота</Link>
+                    <Link to={`/characters/dlc1`} className='nav_link' onClick={clickCharHandler}>Каменные сердца</Link>
+                    <Link to={`/characters/dlc2`} className='nav_link' onClick={clickCharHandler}>Кровь и вино</Link>
                 </div>
              
                 </div>

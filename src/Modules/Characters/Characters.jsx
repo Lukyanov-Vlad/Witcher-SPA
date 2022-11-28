@@ -13,13 +13,11 @@ export const Characters =observer(()=>{
     const {persCat}=useParams();
    
     
-    const {charList,loadChar,loadingCharStatus,charPerPage,currentPage,setCurrentPage,currentCharData,persPageTitle,loadingPersTitle,loadTitle}=charStore;
+    const {charList,loadChar,loadingCharStatus,charPerPage,currentPage,setCurrentPageChar,currentCharData,persPageTitle,loadingPersTitle,loadTitle}=charStore;
+   
     useEffect(()=>{
-        
         loadTitle(persCat);
-    },[persCat])
-    useEffect(()=>{
-        setCurrentPage(1);
+        // setCurrentPage(1);   
         loadChar(persCat);
     },[persCat])
     useEffect(()=>{ 
@@ -38,7 +36,7 @@ export const Characters =observer(()=>{
                     {loadingCharStatus && <Loader />}
                     {!loadingCharStatus && charList && currentCharData.map((item)=><CharItem key={item.id} pers={item}/>)}
                 </div>
-                {!loadingCharStatus && charList && <Pagination onChange={(value)=>{setCurrentPage(value)}}
+                {!loadingCharStatus && charList && <Pagination onChange={(value)=>{setCurrentPageChar(value)}}
                                                    
                                                    total={charList.length}
                                                    pageSize={charPerPage}

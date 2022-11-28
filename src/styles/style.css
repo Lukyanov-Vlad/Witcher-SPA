@@ -1108,6 +1108,9 @@ button.ant-pagination-item-link,
   .ant-pagination-item-container span svg{
     color: #FFFFFF !important;
   }
+  .ant-pagination-item-active{
+        box-shadow: 0 0 5px #DB3138;
+  }
 /*------------------pagination end------------------*/
 
 

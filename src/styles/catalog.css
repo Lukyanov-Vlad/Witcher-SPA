@@ -130,6 +130,7 @@
     margin: 15px;
 }
 .catalog_item_img{
+    display: block;
    text-align: center;
 }
 .catalog_item_img img{

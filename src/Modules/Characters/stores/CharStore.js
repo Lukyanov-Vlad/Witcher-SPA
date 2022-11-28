@@ -81,7 +81,7 @@ class CharStore{
             
         }
     }
-    setCurrentPage(page){
+    setCurrentPageChar(page){
 
         this.currentPage=page;
     }
