@@ -931,7 +931,7 @@ input:-webkit-autofill:active {
 .footer_link:hover{
     color: #FFFFFF;
     background-color: transparent;
-    text-shadow: 0 0 30px #DB3138;
+    text-shadow:1px 1px 15px red;;
     cursor: pointer;
 }
 .footer_bottom_menu .nav_link::before,
