@@ -215,7 +215,9 @@
 .ant-btn-default{
     display: none !important;
 }
-
+.ant-modal-close-x svg{
+    color: white;
+}
 .ant-modal-body .h3_title{
     font-family: 'Inter';
 }   
