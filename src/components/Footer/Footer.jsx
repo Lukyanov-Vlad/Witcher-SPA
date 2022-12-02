@@ -4,21 +4,18 @@ import { FooterBottom } from "./components/FooterBottom"
 import { FooterTop } from "./components/FooterTop"
 
 
-export const Footer =()=>{
-   
+export const Footer = () => {
+
     return (
         <footer className="footer">
             <FooterTop />
-              
+
             <FooterBottom />
-               
+
             <FooterUnder />
-             
-               
-                  
-                
+
         </footer>
-       
-        
+
+
     )
 }

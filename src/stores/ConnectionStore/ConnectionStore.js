@@ -1,28 +1,28 @@
 import { makeAutoObservable } from "mobx";
 
-class ConnectionStore{
+class ConnectionStore {
 
-    messagies=JSON.parse(localStorage.getItem('messages')) || [];
-    emails=JSON.parse(localStorage.getItem('emails')) || [];
-    
-    constructor(){
-        makeAutoObservable(this,undefined,{
-            autoBind:true,
+    messagies = JSON.parse(localStorage.getItem('messages')) || [];
+    emails = JSON.parse(localStorage.getItem('emails')) || [];
+
+    constructor() {
+        makeAutoObservable(this, undefined, {
+            autoBind: true,
         })
     }
 
-    addMessage(obj){
-      
+    addMessage(obj) {
+
         this.messagies.push(obj);
-        localStorage.setItem('messages',JSON.stringify(this.messagies));
-        
+        localStorage.setItem('messages', JSON.stringify(this.messagies));
+
     }
-    addEmails(email){
+    addEmails(email) {
         this.emails.push(email);
-        localStorage.setItem('emails',JSON.stringify(this.emails));
-    }   
+        localStorage.setItem('emails', JSON.stringify(this.emails));
+    }
 }
 
 
-const connectionStore=new ConnectionStore();
+const connectionStore = new ConnectionStore();
 export default connectionStore;

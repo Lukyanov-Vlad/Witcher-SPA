@@ -10,20 +10,20 @@ import { AbilityComponent } from "./components/AbilityComponent";
 import { LocationComponent } from "./components/LocationComponent/LocationComponent";
 
 
-export const Main =observer(()=>{
+export const Main = observer(() => {
 
-    return(
-        <main className="main">
-             <BannerComponent />
-             <div className="container">
-               <HelloTrailerComponent />
-               <AbilityComponent />
-               <LocationComponent />
-               <CarouselComponent />
+     return (
+          <main className="main">
+               <BannerComponent />
+               <div className="container">
+                    <HelloTrailerComponent />
+                    <AbilityComponent />
+                    <LocationComponent />
+                    <CarouselComponent />
 
-             </div>    
-             
-             
-        </main>
-   )
+               </div>
+
+
+          </main>
+     )
 })

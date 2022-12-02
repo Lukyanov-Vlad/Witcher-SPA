@@ -1,22 +1,22 @@
 import { makeAutoObservable } from "mobx";
 
-class CartModalStore{
+class CartModalStore {
 
-   
 
-    modalVisible=false;
 
-    constructor(){
-        makeAutoObservable(this,undefined,{
-            autoBind:true,
+    modalVisible = false;
+
+    constructor() {
+        makeAutoObservable(this, undefined, {
+            autoBind: true,
         })
     }
 
 
-    setVisible(){
-        this.modalVisible=!this.modalVisible;
+    setVisible() {
+        this.modalVisible = !this.modalVisible;
     }
 }
 
-const cartModalStore=new CartModalStore();
+const cartModalStore = new CartModalStore();
 export default cartModalStore;

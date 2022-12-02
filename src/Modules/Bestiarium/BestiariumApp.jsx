@@ -4,11 +4,11 @@ import { Monster } from "../Monster";
 import { Bestiarium } from "../Bestiarium";
 
 
-export const BestiariumApp=()=>{
-    return(
+export const BestiariumApp = () => {
+    return (
         <Routes>
-              <Route index path='/' element={<Bestiarium />}></Route>
-             <Route path='/:idMonster' element={<Monster />}></Route>
+            <Route index path='/' element={<Bestiarium />}></Route>
+            <Route path='/:idMonster' element={<Monster />}></Route>
         </Routes>
     )
 }
