@@ -53,7 +53,7 @@ body,
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url('../img/bg-1920.jpg');
+    background-image: url(https://imageup.ru/img125/4102938/bg-1920.jpg);
 }
 
 .container {
