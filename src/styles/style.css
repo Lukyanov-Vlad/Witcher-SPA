@@ -972,7 +972,7 @@ input:-webkit-autofill:active {
 .footer_bottom_menu,
 .footer_bottom_contacts {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: center;
     align-items: center;
 }
@@ -983,7 +983,9 @@ input:-webkit-autofill:active {
     text-align: center;
     font-size: 22px;
 }
-
+.footer_bottom_menu .nav_wrapper{
+    flex-direction: column !important;
+}
 .footer_bottom_menu .nav_link,
 .footer_link {
     text-align: left;
@@ -995,7 +997,7 @@ input:-webkit-autofill:active {
     font-size: 20px;
     line-height: 24px;
 
-    display: inline-block;
+    /* display: inline-block; */
 
     color: #FFFFFF;
 
