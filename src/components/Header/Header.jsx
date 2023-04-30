@@ -12,7 +12,7 @@ export const Header = observer(() => {
             <div className="container">
                 <div className="header_wrapper">
                     <div className="header_logo">
-                        <Link to='/' ><img src='https://imageup.ru/img297/4159626/logo_main.png' alt='Главная страница' className="log_img" /></Link>
+                        <Link to='/' ><img src='https://i.ibb.co/9yzv58z/logo-main.png' alt='Главная страница' className="log_img" /></Link>
                     </div>
                     <div className="nav_and_cart">
 

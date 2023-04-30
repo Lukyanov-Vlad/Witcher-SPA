@@ -26,37 +26,37 @@ export const CarouselComponent = () => {
                     ref={ref}>
                     <div className='carousel_item'>
                         <div className="carousel_item_img">
-                            <Image src='https://imageup.ru/img295/4062099/screen_shoot1.jpg' className='carousel_img' />
+                            <Image src='https://i.ibb.co/tKxcxxR/screen-shoot1.jpg' className='carousel_img' />
                         </div>
                         <div className="carousel_item_img">
-                            <Image src='https://imageup.ru/img26/4062100/screen_shoot2.jpg' className='carousel_img' />
+                            <Image src='https://i.ibb.co/GMdG22s/screen-shoot2.jpg' className='carousel_img' />
                         </div>
                         <div className="carousel_item_img">
-                            <Image src='https://imageup.ru/img297/4062101/screen_shoot3.jpg' className='carousel_img' />
+                            <Image src='https://i.ibb.co/hg5Z8Mr/screen-shoot3.jpg' className='carousel_img' />
                         </div>
 
 
                     </div>
                     <div className='carousel_item'>
                         <div className="carousel_item_img">
-                            <Image src='https://imageup.ru/img109/4062103/screen_shoot4.jpg' className='carousel_img' />
+                            <Image src='https://i.ibb.co/HtD7cMq/screen-shoot4.jpg' className='carousel_img' />
                         </div>
                         <div className="carousel_item_img">
-                            <Image src='https://imageup.ru/img297/4062104/screen_shoot5.jpg' className='carousel_img' />
+                            <Image src='https://i.ibb.co/XbD3B31/screen-shoot5.jpg' className='carousel_img' />
                         </div>
                         <div className="carousel_item_img">
-                            <Image src='https://imageup.ru/img164/4062105/screen_shoot6.jpg' className='carousel_img' />
+                            <Image src='https://i.ibb.co/M1y1vCg/screen-shoot6.jpg' className='carousel_img' />
                         </div>
                     </div>
                     <div className='carousel_item'>
                         <div className="carousel_item_img">
-                            <Image src='https://imageup.ru/img287/4062106/screen_shoot7.jpg' className='carousel_img' />
+                            <Image src='https://i.ibb.co/3SMWntR/screen-shoot7.jpg' className='carousel_img' />
                         </div>
                         <div className="carousel_item_img">
-                            <Image src='https://imageup.ru/img67/4062107/screen_shoot8.jpg' className='carousel_img' />
+                            <Image src='https://i.ibb.co/8YsnRH6/screen-shoot8.jpg' className='carousel_img' />
                         </div>
                         <div className="carousel_item_img">
-                            <Image src='https://imageup.ru/img85/4062108/screen_shoot9.jpg' className='carousel_img' />
+                            <Image src='https://i.ibb.co/dgZ1M4H/screen-shoot9.jpg' className='carousel_img' />
                         </div>
                     </div>
                 </Carousel>

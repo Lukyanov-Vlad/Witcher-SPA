@@ -45,7 +45,7 @@ export const FooterBottom = () => {
                     <button className='footer_link' onClick={changeVisible}>Обратная связь</button>
                 </div>
                 <div className="footer_bottom_logo">
-                    <Link to='/' className="footer_logo_link"><img className='footer_logo_img' src="https://imageup.ru/img215/4065132/1200px-cd_projekt_logosvg.png" alt="CD Project Red" /></Link>
+                    <Link to='/' className="footer_logo_link"><img className='footer_logo_img' src="https://i.ibb.co/nL97KFV/1200px-cd-projekt-logosvg.png" alt="CD Project Red" /></Link>
                 </div>
             </div>
             {visible && <ModalForm closeForm={changeVisible} />}
