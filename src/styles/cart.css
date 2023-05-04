@@ -219,7 +219,7 @@
     border: 1px solid #DB3138;
     margin: 0 20px;
     height: 200px;
-    overflow-y: scroll;
+    overflow-y: auto;
     margin: 0 auto;
     padding: 10px;
 }

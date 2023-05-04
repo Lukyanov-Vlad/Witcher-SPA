@@ -38,7 +38,7 @@ export const Category = observer(() => {
                             category={category}
                         />)}
                     </div>
-                    <button className="category_all_btn" onClick={clickHandler}>Показать все категории</button>
+                    <button className="category_all_btn" onClick={clickHandler}>Показать все карты</button>
                 </div>
             </div>
 
